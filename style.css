@@ -33,7 +33,7 @@ img {
 }
 
 .container {
-    width: min(90%,500px);
+    width: min(90%,600px);
     margin-inline: auto;
     background-color: var(--clr-neu-dark-gray-blue);
     border-radius: 10px;
@@ -63,34 +63,19 @@ img {
     position: relative;
 }
 
-.advice-box__advice::before,
-.advice-box__advice::after {
-    font-family: "Font Awesome 5 Free"; 
-    font-size: .6rem;
-    position: absolute;
-    color: var(--clr-pri-cyan);
-}
-
-.advice-box__advice::before {
-    content: "\f10d";
-    left: 0;
-    top: 0;
-}
-
-.advice-box__advice::after {
-    content: "\f10e";
-    right: 0;
-    bottom: 0;
-}
-
 /* Divider */
 .divider {
     text-align: center;
 }
 
-.divider>svg {
-    display: block;
-    margin-inline: auto;
+.divider img {
+    content: url("./images/pattern-divider-mobile.svg");
+}
+
+@media (min-width:768px) {
+    .divider img {
+        content: url("./images/pattern-divider-desktop.svg");
+    }
 }
 
 /* Button */
